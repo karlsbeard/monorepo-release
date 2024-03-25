@@ -18,7 +18,7 @@
         },
 
         "@release-it-plugins/workspaces": {
-            "publish": true,
+            "publish": false,
             "workspaces": [
                 "packages/*"
             ]
