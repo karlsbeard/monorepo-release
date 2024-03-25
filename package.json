@@ -1,0 +1,18 @@
+{
+  "name": "monorepo-release",
+  "version": "1.0.0",
+  "private": true,
+  "description": "the template for release-it & monorepo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pnpm -r --filter=./packages/* run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "release-it": "^17.1.1",
+    "typescript": "^5.4.3"
+  }
+}
