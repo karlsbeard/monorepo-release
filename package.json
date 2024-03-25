@@ -1,6 +1,6 @@
 {
   "name": "monorepo-release",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "private": true,
   "description": "the template for release-it & monorepo",
   "repository": {
@@ -19,6 +19,7 @@
   "devDependencies": {
     "@release-it-plugins/workspaces": "^4.2.0",
     "@release-it/conventional-changelog": "^8.0.1",
+    "bumpp": "^9.4.0",
     "release-it": "^17.1.1",
     "typescript": "^5.4.3"
   }
