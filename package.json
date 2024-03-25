@@ -1,13 +1,17 @@
 {
   "name": "monorepo-release",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "private": true,
   "description": "the template for release-it & monorepo",
-  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/karlsbeard/monorepo-release"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "pnpm -r --filter=./packages/* run build",
-    "release": "release-it"
+    "release": "release-it",
+    "bumpp": "bumpp package.json packages/**/package.json"
   },
   "keywords": [],
   "author": "",
