@@ -1,6 +1,6 @@
 {
   "name": "monorepo-release",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "private": true,
   "description": "the template for release-it & monorepo",
   "repository": {
