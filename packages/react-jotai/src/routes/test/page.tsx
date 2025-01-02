@@ -1,8 +1,10 @@
-export default function Test() {
-    return (
+import { Component1 } from "./atomTest";
 
-        <div>
-            <div> this is test</div>
-        </div>
-    )
+export default function Test() {
+  return (
+    <>
+      <h1>this is test</h1>
+      <Component1></Component1>
+    </>
+  );
 }
