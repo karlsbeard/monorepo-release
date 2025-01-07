@@ -15,6 +15,10 @@ import { atom, useAtom } from "jotai";
 //   );
 // };
 
+const firstNameAtom = atom("John");
+const lastNameAtom = atom('Doe');
+const showingNameAtom = atom(firstNameAtom);
+
 
 export const Component1 = () => {
     const [currentAtom, setCurrentAtom] = useState(() => atom(0));
@@ -28,4 +32,22 @@ export const Component1 = () => {
         </button>
       </div>
     );
+}
+
+export const Component2 = () => {
+  const [nameAtom, setNameAtom] = useAtom(showingNameAtom);
+  const [name] = useAtom(nameAtom)
+
+  return (
+    <div>
+      Name: {name}
+      <button onClick={() => setNameAtom(firstNameAtom)}>
+        Show first name
+      </button>
+      <button onClick={() => setNameAtom(lastNameAtom)}>
+        Show Last Name
+      </button>
+    </div>
+  )
+
 }
